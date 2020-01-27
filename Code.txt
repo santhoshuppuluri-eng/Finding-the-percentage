@@ -1,0 +1,9 @@
+n = int(input())
+student_marks = {}
+for i in range(n):
+    name, *line = input().split()
+    scores = list(map(float, line))
+    student_marks[name] = scores
+needed=input()
+lst=student_marks[needed]
+print("{0:.2f}".format(sum(lst)/len(lst)))
